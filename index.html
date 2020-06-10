@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <style>
+      .calc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+      }
+    </style>
+    <title>Hello, world!</title>
+  </head>
+  <body class="bg-primary">
+    <section class="calc">
+      <div class="row w-100">
+        <div class="col-md-6 offset-3">
+          <div class="card mt-5 py-3">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <h3 class="mb-4">CGPA Calculator</h3>
+                </div>
+                <div class="col-md-6 text-center">
+                  <p>CGPA : <span id="cgpa" class="text-danger"></span></p>
+                </div>
+                <div class="col-md-6 text-center">
+                  <p>Class : <span id="division" class="text-danger"></span></p>
+                </div>
+                <div class="col-md-12">
+                  <p class="text-danger" id="error"></p>
+                  <input type="text" name="" id="input" class="form-control" />
+                </div>
+                <div class="col-md-12 text-center">
+                  <button class="btn btn-primary mt-4" id="btn">
+                    Calculate
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./jquery-3.5.1.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
